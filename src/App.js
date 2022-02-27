@@ -1,10 +1,12 @@
 import logo from './logo.svg';
+
 import './App.scss';
+import ToDo from "./components/ToDo/ToDo";
+
 
 function App() {
   return (
-    <h1>123</h1>
-
+    <ToDo/>
   );
 }
 
