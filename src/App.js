@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 
 import './App.scss';
-import ToDo from "./components/ToDo/ToDo";
+import SideBar from "./components/SideBar/SideBar";
+import Content from "./components/Content/Content";
 
 
 function App() {
   return (
-    <ToDo/>
+    <div className={'ToDo'}>
+      <SideBar/>
+      <Content/>
+    </div>
   );
 }
 

@@ -1,7 +1,8 @@
+import './Content.scss';
 
 function Content(props) {
     return(
-        <div>
+        <div className={'content'}>
 
         </div>
     )

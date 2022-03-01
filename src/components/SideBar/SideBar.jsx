@@ -1,3 +1,5 @@
+import './SideBar.scss';
+
 
 function SideBar(props) {
     return(
