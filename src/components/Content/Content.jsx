@@ -2,7 +2,7 @@ import './Content.scss';
 
 function Content(props) {
     return(
-        <div className={'content'}>
+        <div className={'todo__content'}>
 
         </div>
     )

@@ -1,5 +1,18 @@
-.sideBar{
-  width: 300px;
+.todo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 750px;
   height: 550px;
-  border: 1px solid black;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 2px 20px #9c9c9cbd;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+
+  &__sideBar{
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #f1f1f1;
+    background-color: #f4f6f8;
+  }
 }

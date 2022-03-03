@@ -7,7 +7,7 @@ import Content from "./components/Content/Content";
 
 function App() {
   return (
-    <div className={'ToDo'}>
+    <div className={'todo'}>
       <SideBar/>
       <Content/>
     </div>
