@@ -1,11 +1,16 @@
 import './SideBar.scss';
-
+import icon from '../../assets/img/app.svg'
 
 function SideBar(props) {
     return(
-        <div className={'todo__sideBar'}>
-
-        </div>
+        <ul className={'todo__sideBar'}>
+            <li>
+                <i>
+                    <img src={icon} alt={'item icon'}/>
+                </i>
+                <span>Все задачи</span>
+            </li>
+        </ul>
     )
 }
 export default SideBar;
