@@ -1,16 +1,11 @@
 import './SideBar.scss';
-import icon from '../../assets/img/app.svg'
+import React from "react";
+import List from "./List/List";
 
 function SideBar(props) {
-    return(
-        <ul className={'todo__sideBar'}>
-            <li>
-                <i>
-                    <img src={icon} alt={'item icon'}/>
-                </i>
-                <span>Все задачи</span>
-            </li>
-        </ul>
+    return (
+        <List lists={props.lists} colors={props.colors}/>
     )
 }
+
 export default SideBar;
