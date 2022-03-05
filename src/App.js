@@ -10,7 +10,7 @@ import Content from "./components/Content/Content";
 function App() {
   return (
     <div className={'todo'}>
-      <SideBar lists={state.lists} colors={state.colors}/>
+      <SideBar state={state}/>
       <Content/>
     </div>
   );
