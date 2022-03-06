@@ -1,5 +1,6 @@
 import React from "react";
 
+import './List.scss'
 import allTaskIcon from '../../../assets/img/app.svg'
 
 const List = ({state}) => {
@@ -8,6 +9,7 @@ const List = ({state}) => {
             <li>
                 <img src={allTaskIcon}/>
                 <span>Все задачи</span></li>
+
             {state.lists.map(i =>
                 <li key={i.id}>
                     <div className={`point point__${state.colors[i.id].name}`}></div>
