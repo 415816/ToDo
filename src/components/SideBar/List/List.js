@@ -2,6 +2,7 @@ import React from "react";
 
 import './List.scss'
 import allTaskIcon from '../../../assets/img/app.svg'
+import addList from '../../../assets/img/add.svg'
 
 const List = ({state}) => {
     return (
@@ -15,6 +16,10 @@ const List = ({state}) => {
                     <div className={`point point__${state.colors[i.id].name}`}></div>
                     <span>{i.name}</span>
                 </li>)}
+
+            <li>
+                <img src={addList}/>
+                <span>Добавить список</span></li>
         </ul>
     );
 }
