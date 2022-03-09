@@ -4,22 +4,26 @@ import './List.scss'
 import allTaskIcon from '../../../assets/img/app.svg'
 import addList from '../../../assets/img/add.svg'
 
-const List = ({state}) => {
+const List = ({state, qwe}) => {
+
     return (
         <ul className={'todo__sideBar'}>
-            <li>
+            <li className={'active'}>
                 <img src={allTaskIcon}/>
-                <span>Все задачи</span></li>
+                <span>Все задачи</span>
+            </li>
 
             {state.lists.map(i =>
-                <li key={i.id}>
+                <li onClick={qwe(i)} key={i.id}>
                     <div className={`point point__${state.colors[i.id].name}`}></div>
                     <span>{i.name}</span>
                 </li>)}
 
+            <addList/>
             <li>
                 <img src={addList}/>
-                <span>Добавить список</span></li>
+                <span>Добавить список</span>
+            </li>
         </ul>
     );
 }
